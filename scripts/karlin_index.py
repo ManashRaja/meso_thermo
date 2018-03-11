@@ -18,6 +18,13 @@ def getDataMatrix(data_lines):
 		m.append(m_l)
 	return m
 
+def getNumResByName(residue_name, data_matrix):
+	counter = 0
+	for i in range(len(data_matrix)):
+		if (residue_name in data_matrix[i][1]):
+			counter = counter+1
+	return counter
+
 def main():
 	resp_filename = sys.argv[1]
 
@@ -25,6 +32,7 @@ def main():
 	resp_f = open(resp_filename,'r')
 	resp_data_lines = resp_f.readlines()
 	data_matrix = getDataMatrix(resp_data_lines)
+	print getNumResByName("ALA", data_matrix)
 	#print data_matrix
 
 main()
