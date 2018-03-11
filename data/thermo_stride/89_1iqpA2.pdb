@@ -1,0 +1,121 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ../data/thermo_pdb/89_1iqpA2.pdb T                                    ~~~~
+REM                                                                        ~~~~
+REM                .         .         .         .         .               ~~~~
+SEQ  1    RARPEDIREMMLLALKGNFLKAREKLREILLKQGLSGEDVLVQMHKEVFN   50          ~~~~
+STR          HHHHHHHHHHHHH  HHHHHHHHHHHHHHH   HHHHHHHHHHHGGG               ~~~~
+REM                                                                        ~~~~
+REM                .         .         .         .                         ~~~~
+SEQ  51   LPIEEPKKVLLADKIGEYNFRLVEGANEIIQLEALLAQFTLIGKK        95          ~~~~
+STR       TTT HHHHHHHHHHHHHHHHHHHH   HHHHHHHHHHHHHHHHTT                    ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  AlphaHelix   PRO   236 T      LYS    248 T                            ~~~~
+LOC  AlphaHelix   PHE   251 T      GLN    265 T                            ~~~~
+LOC  AlphaHelix   GLY   269 T      GLU    279 T                            ~~~~
+LOC  AlphaHelix   GLU   287 T      GLU    306 T                            ~~~~
+LOC  AlphaHelix   GLU   310 T      GLY    325 T                            ~~~~
+LOC  310Helix     VAL   280 T      ASN    282 T                            ~~~~
+LOC  GammaInv     LEU   283 T      ILE    285 T                            ~~~~
+LOC  GammaInv     GLY   325 T      LYS    327 T                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  ARG T  233    1    C          Coil    360.00    144.69     161.6      ~~~~
+ASG  ALA T  234    2    C          Coil    -89.68    163.35       4.1      ~~~~
+ASG  ARG T  235    3    C          Coil    -54.75    122.04     142.5      ~~~~
+ASG  PRO T  236    4    H    AlphaHelix    -51.46    -35.60      41.1      ~~~~
+ASG  GLU T  237    5    H    AlphaHelix    -63.06    -41.27      96.5      ~~~~
+ASG  ASP T  238    6    H    AlphaHelix    -60.21    -46.52      31.9      ~~~~
+ASG  ILE T  239    7    H    AlphaHelix    -61.90    -42.09       0.2      ~~~~
+ASG  ARG T  240    8    H    AlphaHelix    -65.33    -41.81      72.4      ~~~~
+ASG  GLU T  241    9    H    AlphaHelix    -63.80    -43.14      85.8      ~~~~
+ASG  MET T  242   10    H    AlphaHelix    -57.31    -51.10       0.8      ~~~~
+ASG  MET T  243   11    H    AlphaHelix    -64.77    -38.57       0.0      ~~~~
+ASG  LEU T  244   12    H    AlphaHelix    -66.36    -38.56      46.7      ~~~~
+ASG  LEU T  245   13    H    AlphaHelix    -62.21    -49.81      25.1      ~~~~
+ASG  ALA T  246   14    H    AlphaHelix    -55.99    -52.62       0.0      ~~~~
+ASG  LEU T  247   15    H    AlphaHelix    -54.35    -34.64      18.0      ~~~~
+ASG  LYS T  248   16    H    AlphaHelix    -73.61    -19.03     132.7      ~~~~
+ASG  GLY T  249   17    C          Coil    116.19     -2.32      37.0      ~~~~
+ASG  ASN T  250   18    C          Coil    -89.23     66.22      60.4      ~~~~
+ASG  PHE T  251   19    H    AlphaHelix    -57.75    -48.61      59.6      ~~~~
+ASG  LEU T  252   20    H    AlphaHelix    -61.00    -40.98     125.4      ~~~~
+ASG  LYS T  253   21    H    AlphaHelix    -66.30    -40.86     136.1      ~~~~
+ASG  ALA T  254   22    H    AlphaHelix    -53.92    -51.35       0.0      ~~~~
+ASG  ARG T  255   23    H    AlphaHelix    -55.97    -42.49      95.4      ~~~~
+ASG  GLU T  256   24    H    AlphaHelix    -61.50    -45.04      97.0      ~~~~
+ASG  LYS T  257   25    H    AlphaHelix    -60.49    -44.80      24.4      ~~~~
+ASG  LEU T  258   26    H    AlphaHelix    -58.33    -36.20       1.2      ~~~~
+ASG  ARG T  259   27    H    AlphaHelix    -66.21    -50.15      86.7      ~~~~
+ASG  GLU T  260   28    H    AlphaHelix    -54.95    -52.40      91.9      ~~~~
+ASG  ILE T  261   29    H    AlphaHelix    -52.24    -55.35       3.0      ~~~~
+ASG  LEU T  262   30    H    AlphaHelix    -59.98    -27.94      43.1      ~~~~
+ASG  LEU T  263   31    H    AlphaHelix    -77.66    -34.01     155.2      ~~~~
+ASG  LYS T  264   32    H    AlphaHelix    -81.05    -17.59     119.8      ~~~~
+ASG  GLN T  265   33    H    AlphaHelix   -137.92    -40.05      88.5      ~~~~
+ASG  GLY T  266   34    C          Coil     84.12     38.39      61.0      ~~~~
+ASG  LEU T  267   35    C          Coil    -74.13    173.94      27.9      ~~~~
+ASG  SER T  268   36    C          Coil   -103.64    170.82      38.8      ~~~~
+ASG  GLY T  269   37    H    AlphaHelix    -54.74    -47.32       1.6      ~~~~
+ASG  GLU T  270   38    H    AlphaHelix    -64.94    -36.83      85.2      ~~~~
+ASG  ASP T  271   39    H    AlphaHelix    -56.47    -51.37      77.8      ~~~~
+ASG  VAL T  272   40    H    AlphaHelix    -61.56    -43.41       0.2      ~~~~
+ASG  LEU T  273   41    H    AlphaHelix    -64.40    -37.17       2.8      ~~~~
+ASG  VAL T  274   42    H    AlphaHelix    -58.90    -54.49      70.7      ~~~~
+ASG  GLN T  275   43    H    AlphaHelix    -59.37    -41.41       3.6      ~~~~
+ASG  MET T  276   44    H    AlphaHelix    -61.65    -47.23       2.0      ~~~~
+ASG  HIS T  277   45    H    AlphaHelix    -53.37    -35.35      84.6      ~~~~
+ASG  LYS T  278   46    H    AlphaHelix    -80.16    -50.78     105.3      ~~~~
+ASG  GLU T  279   47    H    AlphaHelix    -67.98    -20.57       4.0      ~~~~
+ASG  VAL T  280   48    G      310Helix    -60.97    -31.67       0.2      ~~~~
+ASG  PHE T  281   49    G      310Helix    -75.76    -10.98      81.8      ~~~~
+ASG  ASN T  282   50    G      310Helix   -107.25     19.84      93.7      ~~~~
+ASG  LEU T  283   51    T          Turn    -98.73    141.73       2.6      ~~~~
+ASG  PRO T  284   52    T          Turn    -64.54     53.85     121.0      ~~~~
+ASG  ILE T  285   53    T          Turn   -115.67    154.66      51.6      ~~~~
+ASG  GLU T  286   54    C          Coil    -68.70    136.85     153.1      ~~~~
+ASG  GLU T  287   55    H    AlphaHelix    -43.72    -45.60     121.0      ~~~~
+ASG  PRO T  288   56    H    AlphaHelix    -58.39    -34.89      82.2      ~~~~
+ASG  LYS T  289   57    H    AlphaHelix    -65.39    -45.76      59.5      ~~~~
+ASG  LYS T  290   58    H    AlphaHelix    -54.40    -38.56      37.5      ~~~~
+ASG  VAL T  291   59    H    AlphaHelix    -70.69    -38.04      51.5      ~~~~
+ASG  LEU T  292   60    H    AlphaHelix    -61.26    -61.62      73.8      ~~~~
+ASG  LEU T  293   61    H    AlphaHelix    -47.05    -46.22       0.0      ~~~~
+ASG  ALA T  294   62    H    AlphaHelix    -61.46    -50.30       5.8      ~~~~
+ASG  ASP T  295   63    H    AlphaHelix    -55.77    -43.10     105.3      ~~~~
+ASG  LYS T  296   64    H    AlphaHelix    -59.98    -44.86      44.5      ~~~~
+ASG  ILE T  297   65    H    AlphaHelix    -59.86    -42.04       3.2      ~~~~
+ASG  GLY T  298   66    H    AlphaHelix    -59.42    -42.17      37.1      ~~~~
+ASG  GLU T  299   67    H    AlphaHelix    -60.09    -46.74      86.9      ~~~~
+ASG  TYR T  300   68    H    AlphaHelix    -73.01    -20.69      13.2      ~~~~
+ASG  ASN T  301   69    H    AlphaHelix    -73.79    -33.14      49.3      ~~~~
+ASG  PHE T  302   70    H    AlphaHelix    -65.12    -38.46     129.4      ~~~~
+ASG  ARG T  303   71    H    AlphaHelix    -64.42    -47.37      88.2      ~~~~
+ASG  LEU T  304   72    H    AlphaHelix    -54.17    -54.23      13.6      ~~~~
+ASG  VAL T  305   73    H    AlphaHelix    -57.27    -24.78      81.9      ~~~~
+ASG  GLU T  306   74    H    AlphaHelix    -94.12     11.48     127.0      ~~~~
+ASG  GLY T  307   75    C          Coil    101.45      3.20      64.7      ~~~~
+ASG  ALA T  308   76    C          Coil    -60.94    161.89      30.4      ~~~~
+ASG  ASN T  309   77    C          Coil    -73.18    118.49      83.3      ~~~~
+ASG  GLU T  310   78    H    AlphaHelix    -47.95    -58.63     101.0      ~~~~
+ASG  ILE T  311   79    H    AlphaHelix    -69.68    -33.86      53.4      ~~~~
+ASG  ILE T  312   80    H    AlphaHelix    -65.98    -41.40      97.4      ~~~~
+ASG  GLN T  313   81    H    AlphaHelix    -71.42    -38.59      26.8      ~~~~
+ASG  LEU T  314   82    H    AlphaHelix    -57.40    -47.52       8.7      ~~~~
+ASG  GLU T  315   83    H    AlphaHelix    -65.70    -38.93      39.6      ~~~~
+ASG  ALA T  316   84    H    AlphaHelix    -64.05    -38.24      31.8      ~~~~
+ASG  LEU T  317   85    H    AlphaHelix    -66.17    -44.25       0.4      ~~~~
+ASG  LEU T  318   86    H    AlphaHelix    -60.84    -34.05       1.6      ~~~~
+ASG  ALA T  319   87    H    AlphaHelix    -64.46    -46.71      31.1      ~~~~
+ASG  GLN T  320   88    H    AlphaHelix    -53.40    -34.36      45.5      ~~~~
+ASG  PHE T  321   89    H    AlphaHelix    -65.50    -49.13       0.0      ~~~~
+ASG  THR T  322   90    H    AlphaHelix    -68.86    -35.39      25.9      ~~~~
+ASG  LEU T  323   91    H    AlphaHelix    -62.39    -41.72     105.5      ~~~~
+ASG  ILE T  324   92    H    AlphaHelix    -69.46    -42.60       6.6      ~~~~
+ASG  GLY T  325   93    H    AlphaHelix    -56.71    -54.75      23.8      ~~~~
+ASG  LYS T  326   94    T          Turn    -76.94     62.23     154.4      ~~~~
+ASG  LYS T  327   95    T          Turn   -165.19    360.00     186.7      ~~~~

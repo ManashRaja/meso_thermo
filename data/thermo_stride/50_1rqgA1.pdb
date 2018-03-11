@@ -1,0 +1,59 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ../data/thermo_pdb/50_1rqgA1.pdb T                                    ~~~~
+REM                                                                        ~~~~
+REM                .         .         .                                   ~~~~
+SEQ  1    VIGTCPYCGAEDQKGDQCEVCGRPLTPEILINPRC                  35          ~~~~
+STR        EEETTTTT   B    TTTTTTTTTTTTTEEEE                               ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  Strand       ILE   140 T      THR    142 T                            ~~~~
+LOC  Strand       ILE   169 T      ARG    172 T                            ~~~~
+LOC  TurnIV       CYS   143 T      CYS    146 T                            ~~~~
+LOC  TurnIV       PRO   144 T      GLY    147 T                            ~~~~
+LOC  TurnIV       CYS   156 T      CYS    159 T                            ~~~~
+LOC  TurnIV       GLU   157 T      GLY    160 T                            ~~~~
+LOC  TurnIV       GLY   160 T      LEU    163 T                            ~~~~
+LOC  TurnI        THR   164 T      ILE    167 T                            ~~~~
+LOC  TurnI        PRO   165 T      LEU    168 T                            ~~~~
+LOC  TurnIV       LEU   168 T      PRO    171 T                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  VAL T  139    1    C          Coil    360.00    137.05      72.7      ~~~~
+ASG  ILE T  140    2    E        Strand   -140.63     98.14      41.2      ~~~~
+ASG  GLY T  141    3    E        Strand   -158.10   -164.85       7.3      ~~~~
+ASG  THR T  142    4    E        Strand    -78.02    163.13      20.5      ~~~~
+ASG  CYS T  143    5    T          Turn    -74.75    161.24       5.9      ~~~~
+ASG  PRO T  144    6    T          Turn   -107.47     70.63      27.9      ~~~~
+ASG  TYR T  145    7    T          Turn    157.21    -53.66     187.2      ~~~~
+ASG  CYS T  146    8    T          Turn   -113.50    -29.99      64.8      ~~~~
+ASG  GLY T  147    9    T          Turn     97.43     58.09      51.2      ~~~~
+ASG  ALA T  148   10    C          Coil   -119.70    149.72      40.9      ~~~~
+ASG  GLU T  149   11    C          Coil    -72.69    138.71      95.4      ~~~~
+ASG  ASP T  150   12    C          Coil     64.35     98.57      85.9      ~~~~
+ASG  GLN T  151   13    B        Bridge   -136.99    119.97      13.3      ~~~~
+ASG  LYS T  152   14    C          Coil   -115.79    162.72     158.7      ~~~~
+ASG  GLY T  153   15    C          Coil     42.45   -123.99      30.7      ~~~~
+ASG  ASP T  154   16    C          Coil   -146.53     53.83      96.9      ~~~~
+ASG  GLN T  155   17    C          Coil   -134.34    -44.81     125.2      ~~~~
+ASG  CYS T  156   18    T          Turn     80.41   -155.27      50.9      ~~~~
+ASG  GLU T  157   19    T          Turn   -174.25      9.68     110.1      ~~~~
+ASG  VAL T  158   20    T          Turn   -114.90    -59.94      54.5      ~~~~
+ASG  CYS T  159   21    T          Turn   -171.94    -30.26      57.4      ~~~~
+ASG  GLY T  160   22    T          Turn    -54.69    129.48       7.4      ~~~~
+ASG  ARG T  161   23    T          Turn   -143.29    125.67      78.0      ~~~~
+ASG  PRO T  162   24    T          Turn     58.10     87.35      77.5      ~~~~
+ASG  LEU T  163   25    T          Turn   -120.51     88.31       9.2      ~~~~
+ASG  THR T  164   26    T          Turn    -38.02    139.86      61.8      ~~~~
+ASG  PRO T  165   27    T          Turn    -49.65    -16.96      70.3      ~~~~
+ASG  GLU T  166   28    T          Turn   -101.82    -28.67     156.5      ~~~~
+ASG  ILE T  167   29    T          Turn    -71.88     -0.54     109.0      ~~~~
+ASG  LEU T  168   30    T          Turn    -77.91    135.35       5.4      ~~~~
+ASG  ILE T  169   31    E        Strand    -82.87    144.16      90.4      ~~~~
+ASG  ASN T  170   32    E        Strand     57.63     62.52      93.6      ~~~~
+ASG  PRO T  171   33    E        Strand    -62.98    112.26      88.9      ~~~~
+ASG  ARG T  172   34    E        Strand   -134.49    126.41     173.6      ~~~~
+ASG  CYS T  173   35    C          Coil    -48.43    360.00     174.3      ~~~~

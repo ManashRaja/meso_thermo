@@ -3,7 +3,7 @@ import math
 from os import listdir
 from os.path import isfile, join
 
-sep = " "
+sep = ','
 list_aa = ["ALA", "CYS", "ASP", "GLU", "PHE", "GLY", 
 		   "HIS", "ILE", "LYS", "LEU", "MET", "ASN", 
 		   "PRO", "GLN", "ARG", "SER", "THR", "VAL", "TRP", "TYR"]
@@ -155,6 +155,8 @@ def getFrequencyMatrix(data_matrix):
 
 def main():
 	dir_name = sys.argv[1]
+	matrices_dir_name = sys.argv[2]
+
 	feature = "HYDRO"
 	T = 5.0
 
@@ -187,9 +189,9 @@ def main():
 	mainN = scalarMatrixMult(mainN, 1.0/counter)
 	mainF = scalarMatrixMult(mainF, 1.0/counter)
 
-	writeMatrixToFile(mainN, "N.txt")
-	writeMatrixToFile(mainD, "D.txt")
-	writeMatrixToFile(mainKI, "KI.txt")
-	writeMatrixToFile(mainF, "M1.txt")
+	writeMatrixToFile(mainN, join(matrices_dir_name, "N.txt"))
+	writeMatrixToFile(mainD, join(matrices_dir_name, "D.txt"))
+	writeMatrixToFile(mainKI, join(matrices_dir_name, "KI.txt"))
+	writeMatrixToFile(mainF, join(matrices_dir_name, "M1.txt"))
 
 main()

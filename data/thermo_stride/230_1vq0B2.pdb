@@ -1,0 +1,57 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ../data/thermo_pdb/230_1vq0B2.pdb T                                   ~~~~
+REM                                                                        ~~~~
+REM                .         .         .                                   ~~~~
+SEQ  1    DCNREKAKNALLVLDKKELEDMRKEGKGEVVCKWCNTRY              39          ~~~~
+STR          HHHHHHHHHH  HHHHHHHHHH     BTTTTT B                           ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  AlphaHelix   ARG   235 T      VAL    244 T                            ~~~~
+LOC  AlphaHelix   LYS   247 T      GLU    256 T                            ~~~~
+LOC  TurnI        CYS   263 T      CYS    266 T                            ~~~~
+LOC  TurnI        LYS   264 T      ASN    267 T                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  ASP T  232    1    C          Coil    360.00      5.89     165.9      ~~~~
+ASG  CYS T  233    2    C          Coil    -63.28    155.27      40.1      ~~~~
+ASG  ASN T  234    3    C          Coil   -160.84    179.54      60.8      ~~~~
+ASG  ARG T  235    4    H    AlphaHelix    -73.73    -35.80     176.9      ~~~~
+ASG  GLU T  236    5    H    AlphaHelix    -55.53    -45.08     134.8      ~~~~
+ASG  LYS T  237    6    H    AlphaHelix    -66.41    -37.65      95.9      ~~~~
+ASG  ALA T  238    7    H    AlphaHelix    -62.12    -46.77       8.0      ~~~~
+ASG  LYS T  239    8    H    AlphaHelix    -58.26    -40.29     141.2      ~~~~
+ASG  ASN T  240    9    H    AlphaHelix    -65.75    -35.16      79.4      ~~~~
+ASG  ALA T  241   10    H    AlphaHelix    -59.90    -35.05      42.4      ~~~~
+ASG  LEU T  242   11    H    AlphaHelix    -80.67    -29.55      40.7      ~~~~
+ASG  LEU T  243   12    H    AlphaHelix    -68.45    -22.52     124.2      ~~~~
+ASG  VAL T  244   13    H    AlphaHelix    -79.15    -18.45     118.6      ~~~~
+ASG  LEU T  245   14    C          Coil    -67.79    151.86      47.0      ~~~~
+ASG  ASP T  246   15    C          Coil    -56.57    146.63     113.1      ~~~~
+ASG  LYS T  247   16    H    AlphaHelix    -46.17    -44.62      98.5      ~~~~
+ASG  LYS T  248   17    H    AlphaHelix    -59.80    -42.64      61.7      ~~~~
+ASG  GLU T  249   18    H    AlphaHelix    -60.46    -44.44      89.0      ~~~~
+ASG  LEU T  250   19    H    AlphaHelix    -68.19    -32.34      59.4      ~~~~
+ASG  GLU T  251   20    H    AlphaHelix    -64.69    -45.20     114.1      ~~~~
+ASG  ASP T  252   21    H    AlphaHelix    -62.61    -42.15      92.3      ~~~~
+ASG  MET T  253   22    H    AlphaHelix    -59.67    -44.44      45.9      ~~~~
+ASG  ARG T  254   23    H    AlphaHelix    -61.30    -39.18      93.5      ~~~~
+ASG  LYS T  255   24    H    AlphaHelix    -76.45    -27.58     153.0      ~~~~
+ASG  GLU T  256   25    H    AlphaHelix    -65.36    -19.79     153.5      ~~~~
+ASG  GLY T  257   26    C          Coil     97.43    -14.83      66.8      ~~~~
+ASG  LYS T  258   27    C          Coil   -163.31    156.48     141.9      ~~~~
+ASG  GLY T  259   28    C          Coil   -124.84    141.65      35.5      ~~~~
+ASG  GLU T  260   29    C          Coil   -127.92    135.70      86.5      ~~~~
+ASG  VAL T  261   30    C          Coil   -118.46    130.48      30.7      ~~~~
+ASG  VAL T  262   31    B        Bridge   -115.76    122.43      59.5      ~~~~
+ASG  CYS T  263   32    T          Turn    -66.89    120.15      19.6      ~~~~
+ASG  LYS T  264   33    T          Turn    -62.22    -25.97     181.9      ~~~~
+ASG  TRP T  265   34    T          Turn    -80.40    -34.09     217.1      ~~~~
+ASG  CYS T  266   35    T          Turn   -129.79      0.81      71.0      ~~~~
+ASG  ASN T  267   36    T          Turn     61.72     26.38     118.5      ~~~~
+ASG  THR T  268   37    C          Coil    -78.95    132.10      59.3      ~~~~
+ASG  ARG T  269   38    B        Bridge   -100.93    138.60     147.5      ~~~~
+ASG  TYR T  270   39    C          Coil   -125.76    360.00      56.1      ~~~~

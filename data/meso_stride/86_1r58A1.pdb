@@ -1,0 +1,109 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ../data/meso_pdb/86_1r58A1.pdb M                                      ~~~~
+REM                                                                        ~~~~
+REM                .         .         .         .         .               ~~~~
+SEQ  1    GVVHDDMECSHYMKNFDVGHVPIRLPRTKHLLNVINENFGTLAFCRRWLD   50          ~~~~
+STR          EE     EEEETTTT       HHHHHHHHHHHHHHTTTEEEHHHHH               ~~~~
+REM                                                                        ~~~~
+REM                .         .                                             ~~~~
+SEQ  51   RLGESKYLMALKNLCDLGIVDPYPPLCDI                        79          ~~~~
+STR       H  TTTHHHHHHHHHHHTTEEEE  EE                                      ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  AlphaHelix   PRO   397 M      PHE    410 M                            ~~~~
+LOC  AlphaHelix   ARG   417 M      ARG    422 M                            ~~~~
+LOC  AlphaHelix   TYR   428 M      LEU    438 M                            ~~~~
+LOC  Strand       HIS   375 M      ASP    376 M                            ~~~~
+LOC  Strand       HIS   382 M      LYS    385 M                            ~~~~
+LOC  Strand       ALA   414 M      CYS    416 M                            ~~~~
+LOC  Strand       VAL   441 M      TYR    444 M                            ~~~~
+LOC  Strand       LEU   447 M      CYS    448 M                            ~~~~
+LOC  TurnI        ASN   386 M      VAL    389 M                            ~~~~
+LOC  TurnII'      PHE   410 M      LEU    413 M                            ~~~~
+LOC  TurnIV       GLU   425 M      TYR    428 M                            ~~~~
+LOC  TurnVIII     GLY   439 M      ASP    442 M                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  GLY M  372    1    C          Coil    360.00     29.76     105.5      ~~~~
+ASG  VAL M  373    2    C          Coil   -147.52    135.37     112.4      ~~~~
+ASG  VAL M  374    3    C          Coil   -107.41    155.65      82.5      ~~~~
+ASG  HIS M  375    4    E        Strand   -141.83    155.27      86.9      ~~~~
+ASG  ASP M  376    5    E        Strand    -63.46    138.41     106.7      ~~~~
+ASG  ASP M  377    6    C          Coil   -161.00    150.58      83.4      ~~~~
+ASG  MET M  378    7    C          Coil     73.63    172.87     127.7      ~~~~
+ASG  GLU M  379    8    C          Coil    -66.71    135.64     147.1      ~~~~
+ASG  CYS M  380    9    C          Coil    -74.85    143.17      19.9      ~~~~
+ASG  SER M  381   10    C          Coil   -131.21    -28.58      42.9      ~~~~
+ASG  HIS M  382   11    E        Strand    -90.41    137.49     105.2      ~~~~
+ASG  TYR M  383   12    E        Strand   -147.53    152.12      18.4      ~~~~
+ASG  MET M  384   13    E        Strand   -159.65    131.61      55.7      ~~~~
+ASG  LYS M  385   14    E        Strand    -59.27    142.27      39.2      ~~~~
+ASG  ASN M  386   15    T          Turn    -67.89    127.83      52.7      ~~~~
+ASG  PHE M  387   16    T          Turn    -64.06    -30.26     157.1      ~~~~
+ASG  ASP M  388   17    T          Turn    -90.77     -2.67     142.7      ~~~~
+ASG  VAL M  389   18    T          Turn    -86.74    129.22      40.6      ~~~~
+ASG  GLY M  390   19    C          Coil    -91.86   -167.95      56.2      ~~~~
+ASG  HIS M  391   20    C          Coil    -58.32    133.33     170.9      ~~~~
+ASG  VAL M  392   21    C          Coil   -129.34    115.30      51.5      ~~~~
+ASG  PRO M  393   22    C          Coil    -64.85    135.44      94.5      ~~~~
+ASG  ILE M  394   23    C          Coil   -136.08    128.22      15.4      ~~~~
+ASG  ARG M  395   24    C          Coil    -96.97    -34.73     224.0      ~~~~
+ASG  LEU M  396   25    C          Coil    -47.58    116.49      99.2      ~~~~
+ASG  PRO M  397   26    H    AlphaHelix    -45.81    -62.89     103.7      ~~~~
+ASG  ARG M  398   27    H    AlphaHelix    -65.25    -38.35     129.2      ~~~~
+ASG  THR M  399   28    H    AlphaHelix    -68.99    -39.38       3.4      ~~~~
+ASG  LYS M  400   29    H    AlphaHelix    -62.36    -49.80      98.6      ~~~~
+ASG  HIS M  401   30    H    AlphaHelix    -61.07    -43.09      86.9      ~~~~
+ASG  LEU M  402   31    H    AlphaHelix    -63.60    -44.41       1.2      ~~~~
+ASG  LEU M  403   32    H    AlphaHelix    -59.39    -40.50      11.8      ~~~~
+ASG  ASN M  404   33    H    AlphaHelix    -64.55    -40.81      69.4      ~~~~
+ASG  VAL M  405   34    H    AlphaHelix    -61.91    -42.39      11.4      ~~~~
+ASG  ILE M  406   35    H    AlphaHelix    -65.17    -44.48       0.0      ~~~~
+ASG  ASN M  407   36    H    AlphaHelix    -64.49    -38.74      62.2      ~~~~
+ASG  GLU M  408   37    H    AlphaHelix    -70.32    -40.50     152.3      ~~~~
+ASG  ASN M  409   38    H    AlphaHelix    -95.48    -31.61      80.5      ~~~~
+ASG  PHE M  410   39    H    AlphaHelix   -120.10    -30.12      27.7      ~~~~
+ASG  GLY M  411   40    T          Turn     61.53   -128.38      19.9      ~~~~
+ASG  THR M  412   41    T          Turn    -93.00      7.94      57.2      ~~~~
+ASG  LEU M  413   42    T          Turn    -82.20    150.79     125.3      ~~~~
+ASG  ALA M  414   43    E        Strand    -72.19    153.33      48.9      ~~~~
+ASG  PHE M  415   44    E        Strand   -144.52    176.40       4.5      ~~~~
+ASG  CYS M  416   45    E        Strand   -136.20    168.86      13.0      ~~~~
+ASG  ARG M  417   46    H    AlphaHelix    -59.59    -38.51      52.3      ~~~~
+ASG  ARG M  418   47    H    AlphaHelix    -57.73    -34.70     170.9      ~~~~
+ASG  TRP M  419   48    H    AlphaHelix    -74.37    -18.02     110.9      ~~~~
+ASG  LEU M  420   49    H    AlphaHelix    -83.56    -39.45       0.2      ~~~~
+ASG  ASP M  421   50    H    AlphaHelix    -59.60    -47.49      83.0      ~~~~
+ASG  ARG M  422   51    H    AlphaHelix    -63.68    -20.08     190.4      ~~~~
+ASG  LEU M  423   52    C          Coil    -86.86      2.85      61.1      ~~~~
+ASG  GLY M  424   53    C          Coil     88.72      6.95      60.8      ~~~~
+ASG  GLU M  425   54    T          Turn    -79.89    140.95      31.7      ~~~~
+ASG  SER M  426   55    T          Turn   -144.19    148.62      70.8      ~~~~
+ASG  LYS M  427   56    T          Turn     54.93     52.92     155.7      ~~~~
+ASG  TYR M  428   57    H    AlphaHelix   -111.86     -4.04      16.2      ~~~~
+ASG  LEU M  429   58    H    AlphaHelix    -52.51    -47.21      89.3      ~~~~
+ASG  MET M  430   59    H    AlphaHelix    -66.92    -41.23     127.1      ~~~~
+ASG  ALA M  431   60    H    AlphaHelix    -61.85    -38.40       4.8      ~~~~
+ASG  LEU M  432   61    H    AlphaHelix    -67.70    -39.49       2.4      ~~~~
+ASG  LYS M  433   62    H    AlphaHelix    -65.20    -38.40     111.4      ~~~~
+ASG  ASN M  434   63    H    AlphaHelix    -59.35    -50.97      45.1      ~~~~
+ASG  LEU M  435   64    H    AlphaHelix    -57.42    -38.19       0.0      ~~~~
+ASG  CYS M  436   65    H    AlphaHelix    -66.92    -46.96      24.0      ~~~~
+ASG  ASP M  437   66    H    AlphaHelix    -62.93    -30.86     107.2      ~~~~
+ASG  LEU M  438   67    H    AlphaHelix    -78.68    -10.33     105.6      ~~~~
+ASG  GLY M  439   68    T          Turn     78.12     12.99      30.1      ~~~~
+ASG  ILE M  440   69    T          Turn    -80.39    -37.61       6.0      ~~~~
+ASG  VAL M  441   70    E        Strand   -122.61    147.50       0.0      ~~~~
+ASG  ASP M  442   71    E        Strand   -116.16    135.37      48.7      ~~~~
+ASG  PRO M  443   72    E        Strand    -87.27    143.96      63.7      ~~~~
+ASG  TYR M  444   73    E        Strand   -129.44     78.97     110.3      ~~~~
+ASG  PRO M  445   74    C          Coil    -64.71    163.93      30.7      ~~~~
+ASG  PRO M  446   75    C          Coil    -58.99    143.95      32.3      ~~~~
+ASG  LEU M  447   76    E        Strand   -110.15    116.55     109.0      ~~~~
+ASG  CYS M  448   77    E        Strand   -128.82    149.70      33.3      ~~~~
+ASG  ASP M  449   78    C          Coil    -91.03   -173.42      75.5      ~~~~
+ASG  ILE M  450   79    C          Coil    -53.76    360.00     188.4      ~~~~
