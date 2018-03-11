@@ -121,7 +121,7 @@ def main():
 				  prev_chain_id + sep +
 				  str(avg_x) + sep +
 				  str(avg_y) + sep +
-				  str(avg_z) + sep + "\n")
+				  str(avg_z) + "\n")
 	o_f.write(out_string)
 	pdb_f.close()
 	o_f.close()
@@ -155,7 +155,7 @@ def main():
 			SA_ratio = float(line[64:69])/getTotalArea(residue_name)
 			SA = getSA(SA_ratio)			
 			if(residue_number == of_res_num):
-				out_string = of_lines[counter][0:len(of_lines[counter])-1] + sep + SS_short + sep + SA + "\n"
+				out_string = of_lines[counter][0:len(of_lines[counter])-1] + SS_short + sep + SA + "\n"
 				counter = counter + 1
 				of_res_num = of_res_num + 1
 				o_f.write(out_string)
