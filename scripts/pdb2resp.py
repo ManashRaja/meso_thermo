@@ -157,13 +157,13 @@ def main():
 				except:
 					residue_number = int(line[11:14])
 				residue_name = line[5:8]
-				SS = line[26:39]
+				SS = line[24:25]
 				SS_short = "N"
-				if("Helix" in SS):
+				if("H" in SS or "G" in SS or "I" in SS):
 					SS_short = "H"
-				elif("Strand" in SS):
+				elif("E" in SS):
 					SS_short = "S"
-				elif("Coil" in SS):
+				elif("b" in SS or "B" in SS or "T" in SS or "C" in SS):
 					SS_short = "L"
 				SA_ratio = float(line[64:69])/getTotalArea(residue_name)
 				SA = getSA(SA_ratio)			

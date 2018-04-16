@@ -40,9 +40,22 @@ def getDistanceBRes(id1, id2, data_matrix):
 	return dist
 
 def getResFeature(residue_name):
-	hydro_list = ["GLY", "ALA", "VAL", "LEU", "ILE", "PRO", "PHE", "MET", "TRY"]
-	if residue_name in hydro_list:
-		return "HYDRO"
+	aro_list = ["PHE", "TYR", "TRP", "HIS"]
+	pos_list = ["LYS", "ARG"]
+	neg_list = ["ASP", "GLU"]
+	pol_list = ["SER", "THR", "LYS", "ASN", "GLN", "ALA", "GLY"]
+	hyd_list = ["VAL", "LEU", "ILE", "MET", "PRO"]
+	
+	if residue_name in aro_list:
+		return "ARO"
+	elif residue_name in pos_list:
+		return "POS"
+	elif residue_name in neg_list:
+		return "NEG"
+	elif residue_name in pol_list:
+		return "POL"
+	elif residue_name in hyd_list:
+		return "HYD"
 
 def getFeatureFrequency(feature, data_matrix):
 	counter = 0
@@ -92,20 +105,27 @@ def getNumByResType(residue_name, SS, SA, data_matrix):
 			counter = counter+1
 	return counter
 
-def getNDmatrices(feature, frequency, T, data_matrix):
+def getNDVmatrices(feature, frequency, T, data_matrix):
 	N_matrix = []
 	D_matrix = []
+	V_matrix = []
 	for aa in list_aa:
 		N_matrix_row = []
 		D_matrix_row = []
+		V_matrix_row = []
 		for ss in list_ss:
 			for sa in list_sa:
 				[N, D] = getKIByResType(aa, ss, sa, feature, frequency, T, data_matrix)
 				N_matrix_row.append(N)
 				D_matrix_row.append(D)
+				V = 0
+				if(N>0.0 and D>0.0):
+					V = 1
+				V_matrix_row.append(V)
 		N_matrix.append(N_matrix_row)
 		D_matrix.append(D_matrix_row)
-	return [N_matrix, D_matrix]
+		V_matrix.append(V_matrix_row)
+	return [N_matrix, D_matrix, V_matrix]
 
 def writeMatrixToFile(matrix, filename):
 	f = open(filename, 'w+')
@@ -121,6 +141,20 @@ def addMatrixToDest(src, dest):
 	for i in range(len(dest)):
 		for j in range(len(dest[i])):
 			dest[i][j] = dest[i][j] + src[i][j]
+	return dest
+
+def SqDiffMatrix(src, mean):
+	dest = src
+	for i in range(len(src)):
+		for j in range(len(src[i])):
+			dest[i][j] =(src[i][j] - mean[i][j]) * (src[i][j] - mean[i][j])
+	return dest
+
+def sqruareRootMatrix(src):
+	dest = src
+	for i in range(len(src)):
+		for j in range(len(src[i])):
+			dest[i][j] = math.sqrt(src[i][j])
 	return dest
 
 def scalarMatrixMult(mat, x):
@@ -152,46 +186,126 @@ def getFrequencyMatrix(data_matrix):
 		freq_m.append(freq_m_row)
 	return freq_m
 
+def appendMatrixColumns(src, dest):
+	# Loop through all the rows
+	counter = 0
+	for row in dest:
+	  src_row = src[counter]
+	  for elems in src_row:
+	  	row.append(elems)
+	  counter = counter+1
+
 
 def main():
 	dir_name = sys.argv[1]
 	matrices_dir_name = sys.argv[2]
-
-	feature = "HYDRO"
+	modifier = sys.argv[3]
 	T = 5.0
 
-	mainN = None
-	mainD = None
-	mainF = None
-	counter = 0
-	allfiles = [f for f in listdir(dir_name) if isfile(join(dir_name, f))]
-	for file in allfiles:
-		#open file
-		filename = join(dir_name, file)
-		print "Running for file ", filename
-		resp_f = open(filename,'r')
-		resp_data_lines = resp_f.readlines()
-		data_matrix = getDataMatrix(resp_data_lines)
-		hydro_f = getFeatureFrequency(feature, data_matrix)
-		[N,D] = getNDmatrices(feature, hydro_f, T, data_matrix)
-		F = getFrequencyMatrix(data_matrix)
-		if(counter == 0):
-			mainN = N
-			mainD = D
-			mainF = F
+	run_for_features = ["ARO","POS","NEG","POL","HYD"]
+	tmeanN = None
+	tmeanD = None
+	tmeanF = None
+	tmeanV = None
+	tstdN = None
+	tstdD = None
+	tstdF = None
+	feature_counter = 0
+	for feature in run_for_features:
+		meanN = None
+		meanD = None
+		meanF = None
+		meanV = None
+		counter = 0
+		allfiles = [f for f in listdir(dir_name) if isfile(join(dir_name, f))]
+		for file in allfiles:
+			#open file
+			filename = join(dir_name, file)
+			print "Running for file ", filename
+			resp_f = open(filename,'r')
+			resp_data_lines = resp_f.readlines()
+			data_matrix = getDataMatrix(resp_data_lines)
+			hydro_f = getFeatureFrequency(feature, data_matrix)
+			[N,D,V] = getNDVmatrices(feature, hydro_f, T, data_matrix)
+			F = getFrequencyMatrix(data_matrix)
+			if(counter == 0):
+				meanN = N
+				meanD = D
+				meanF = F
+				meanV = V
+			else:
+				meanN = addMatrixToDest(N, meanN)
+				meanD = addMatrixToDest(D, meanD)
+				meanF = addMatrixToDest(F, meanF)
+				meanV = addMatrixToDest(V, meanV)
+			counter = counter+1
+		meanD = scalarMatrixMult(meanD, 1.0/counter)
+		meanN = scalarMatrixMult(meanN, 1.0/counter)
+		meanF = scalarMatrixMult(meanF, 1.0/counter)
+		meanV = scalarMatrixMult(meanV, 1.0/counter)
+		if(feature_counter == 0):
+			tmeanN = meanN[:]
+			tmeanD = meanD[:]
+			tmeanF = meanF[:]
+			tmeanV = meanV[:]
 		else:
-			mainN = addMatrixToDest(N, mainN)
-			mainD = addMatrixToDest(D, mainD)
-			mainF = addMatrixToDest(F, mainF)
-		counter = counter+1
-	mainKI = computeKIMatrix(mainN, mainD)
-	mainD = scalarMatrixMult(mainD, 1.0/counter)
-	mainN = scalarMatrixMult(mainN, 1.0/counter)
-	mainF = scalarMatrixMult(mainF, 1.0/counter)
+			appendMatrixColumns(meanN, tmeanN)
+			appendMatrixColumns(meanD, tmeanD)
+			appendMatrixColumns(meanF, tmeanF)
+			appendMatrixColumns(meanV, tmeanV)
 
-	writeMatrixToFile(mainN, join(matrices_dir_name, "N.txt"))
-	writeMatrixToFile(mainD, join(matrices_dir_name, "D.txt"))
-	writeMatrixToFile(mainKI, join(matrices_dir_name, "KI.txt"))
-	writeMatrixToFile(mainF, join(matrices_dir_name, "M1.txt"))
+		## Compute Variance and Standard Deviation
+		stdN = None
+		stdD = None
+		stdF = None
+		counter = 0
+		allfiles = [f for f in listdir(dir_name) if isfile(join(dir_name, f))]
+		for file in allfiles:
+			#open file
+			filename = join(dir_name, file)
+			print "Running for file ", filename
+			resp_f = open(filename,'r')
+			resp_data_lines = resp_f.readlines()
+			data_matrix = getDataMatrix(resp_data_lines)
+			hydro_f = getFeatureFrequency(feature, data_matrix)
+			[N,D,V] = getNDVmatrices(feature, hydro_f, T, data_matrix)
+			F = getFrequencyMatrix(data_matrix)
+			sqdiffN = SqDiffMatrix(N, meanN)
+			sqdiffD = SqDiffMatrix(D, meanD)
+			sqdiffF = SqDiffMatrix(F, meanF)
+			if(counter == 0):
+				stdN = sqdiffN
+				stdD = sqdiffD
+				stdF = sqdiffF
+			else:
+				stdN = addMatrixToDest(sqdiffN, stdN)
+				stdD = addMatrixToDest(sqdiffD, stdD)
+				stdF = addMatrixToDest(sqdiffF, stdF)
+			counter = counter+1
+		stdD = scalarMatrixMult(stdD, 1.0/counter)
+		stdN = scalarMatrixMult(stdN, 1.0/counter)
+		stdF = scalarMatrixMult(stdF, 1.0/counter)
+		stdD = sqruareRootMatrix(stdD)
+		stdF = sqruareRootMatrix(stdF)
+		stdN = sqruareRootMatrix(stdN)
+		if(feature_counter == 0):
+			tstdN = stdN[:]
+			tstdD = stdD[:]
+			tstdF = stdF[:]
+		else:
+			appendMatrixColumns(stdN, tstdN)
+			appendMatrixColumns(stdD, tstdD)
+			appendMatrixColumns(stdF, tstdF)
+		feature_counter = feature_counter+1
+
+	tstdKI = computeKIMatrix(tstdN, tstdD)
+	tmeanKI = computeKIMatrix(tmeanN, tmeanD)
+	writeMatrixToFile(tstdN, join(matrices_dir_name, "tstdN" + modifier + ".txt"))
+	writeMatrixToFile(tstdD, join(matrices_dir_name, "tstdD" + modifier + ".txt"))
+	writeMatrixToFile(tstdKI, join(matrices_dir_name, "tstdKI" + modifier + ".txt"))
+	writeMatrixToFile(tmeanN, join(matrices_dir_name, "tmeanN" + modifier + ".txt"))
+	writeMatrixToFile(tmeanD, join(matrices_dir_name, "tmeanD" + modifier + ".txt"))
+	writeMatrixToFile(tmeanKI, join(matrices_dir_name, "tmeanKI" + modifier + ".txt"))
+	writeMatrixToFile(tmeanV, join(matrices_dir_name, "tmeanV" + modifier + ".txt"))
 
 main()
