@@ -1,13 +1,19 @@
 #!/bin/bash
 
-#$1 stride binary path
+#$1 tmalign binary path
 #$2 pdb dir
 #$3 dest dir
-
-for file in $3*
+counter=0
+for filesrc in $2*
 do
-	f=$(basename $file)
-	dest_name="$4$f"
-    OUTPUT="$($1 $2 $file &)"
-    echo "$OUTPUT" > "$dest_name"
+	for filedb in $3*
+	do
+		f=$(basename $filedb)
+		g=$(basename $filesrc)
+		dest_name="$4$g-$f"
+	    OUTPUT="$($1 $filesrc $filedb &)"
+	    echo "$OUTPUT" > "$dest_name"
+	    let counter++
+	    echo $counter
+	done
 done
