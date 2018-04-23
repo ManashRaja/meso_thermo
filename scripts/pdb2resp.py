@@ -141,10 +141,7 @@ def main():
 		of_lines = o_f.readlines()
 		o_f.close()
 		o_f = open(out_filename, 'w+')
-
-		#get first residue number
-		parts = of_lines[0].split(sep)
-		of_res_num = int(parts[0])
+		
 		counter = 0
 
 		#iterate through all lines
@@ -166,11 +163,12 @@ def main():
 				elif("b" in SS or "B" in SS or "T" in SS or "C" in SS):
 					SS_short = "L"
 				SA_ratio = float(line[64:69])/getTotalArea(residue_name)
-				SA = getSA(SA_ratio)			
+				SA = getSA(SA_ratio)
+				parts = of_lines[counter].split(sep)
+				of_res_num = int(parts[0])		
 				if(residue_number == of_res_num):
 					out_string = of_lines[counter][0:len(of_lines[counter])-1] + sep + SS_short + sep + SA + "\n"
 					counter = counter + 1
-					of_res_num = of_res_num + 1
 					o_f.write(out_string)
 		o_f.close()
 
