@@ -1,3 +1,4 @@
+#python ../../scripts/findNKfeatures.py tstdKI_z_thermo_homo.txt tmeanV_z_thermo_homo.txt tmeanKI_z_thermo_homo.txt tstdKI_z_meso_homo.txt tmeanV_z_meso_homo.txt tmeanKI_z_meso_homo.txt 90 z_NKfeatures_homo.txt z_NKfeatures_homo_id.txt
 import sys
 from os import listdir
 from os.path import isfile, join
@@ -42,6 +43,7 @@ def main():
 	mesoKI_file_name = sys.argv[6]
 	n = int(sys.argv[7])
 	out_file_name = sys.argv[8]
+	out_id_file_name = sys.argv[9]
 	v_thres = 0.4
 
 	thermo_file = open(thermo_file_name, 'r')
@@ -50,15 +52,8 @@ def main():
 	meso_file = open(meso_file_name, 'r')
 	meso_v_file = open(meso_v_file_name, 'r')
 	out_file = open(out_file_name, 'w+')
+	out_id_file = open(out_id_file_name, 'w+')
 	mesoKI_file = open(mesoKI_file_name, 'r')
-
-
-	id_list = []
-	id_counter = 0
-	for i in range(20):
-		for j in range(45):
-			id_list.append(id_counter)
-			id_counter = id_counter+1
 
 	meso_std_ki = stringLinesToDict(meso_file.readlines())
 	meso_v_ki = stringLinesToDict(meso_v_file.readlines())
@@ -78,9 +73,11 @@ def main():
 			k_ids.append(i)
 			out_text = str(i) + "," + str(thermo_std_ki[i]) + "," + str(meso_std_ki[i]) + "," + str(thermoKI[i]) + "," + str(mesoKI[i]) + "\n";
 			out_file.write(out_text)
+			out_id_file.write(str(i)+"\n")
 
 	print "K = ", len(k_ids)
 	out_file.close()
+	out_id_file.close()
 	thermo_file.close()
 	thermo_v_file.close()
 	meso_file.close()

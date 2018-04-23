@@ -1,3 +1,4 @@
+#python pdb2resp.py ../data/thermo_pdb/ ../data/thermo_stride/ ../data/thermo_resp/
 import sys
 from os import listdir
 from os.path import isfile, join
@@ -170,6 +171,8 @@ def main():
 					out_string = of_lines[counter][0:len(of_lines[counter])-1] + sep + SS_short + sep + SA + "\n"
 					counter = counter + 1
 					o_f.write(out_string)
+					if(counter>=len(of_lines)):
+						break
 		o_f.close()
 
 

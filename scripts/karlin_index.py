@@ -1,3 +1,4 @@
+#python karlin_index.py ../data/meso_resp/ ../data/matrices/ _z_meso
 import sys
 import math
 from os import listdir
