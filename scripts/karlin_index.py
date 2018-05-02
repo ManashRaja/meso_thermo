@@ -170,7 +170,7 @@ def computeKIMatrix(N,D):
 		KI_row = []
 		for j in range(len(N[i])):
 			if(D[i][j] == 0.0):
-				KI_row.append(-1.0)
+				KI_row.append(0.0)
 			else:
 				KI_row.append(N[i][j]/D[i][j])
 		KI.append(KI_row)
@@ -208,6 +208,8 @@ def main():
 	tmeanD = None
 	tmeanF = None
 	tmeanV = None
+	tKIN = None
+	tKID = None
 	tstdN = None
 	tstdD = None
 	tstdF = None
@@ -217,6 +219,8 @@ def main():
 		meanD = None
 		meanF = None
 		meanV = None
+		KIN = None
+		NID = None
 		counter = 0
 		allfiles = [f for f in listdir(dir_name) if isfile(join(dir_name, f))]
 		for file in allfiles:
@@ -240,6 +244,8 @@ def main():
 				meanF = addMatrixToDest(F, meanF)
 				meanV = addMatrixToDest(V, meanV)
 			counter = counter+1
+		KIN = meanN[:]
+		KID = meanD[:]
 		meanD = scalarMatrixMult(meanD, 1.0/counter)
 		meanN = scalarMatrixMult(meanN, 1.0/counter)
 		meanF = scalarMatrixMult(meanF, 1.0/counter)
@@ -249,11 +255,15 @@ def main():
 			tmeanD = meanD[:]
 			tmeanF = meanF[:]
 			tmeanV = meanV[:]
+			tKIN = KIN[:]
+			tKID = KID[:]
 		else:
 			appendMatrixColumns(meanN, tmeanN)
 			appendMatrixColumns(meanD, tmeanD)
 			appendMatrixColumns(meanF, tmeanF)
 			appendMatrixColumns(meanV, tmeanV)
+			appendMatrixColumns(KIN, tKIN)
+			appendMatrixColumns(KID, tKID)
 
 		## Compute Variance and Standard Deviation
 		stdN = None
@@ -301,6 +311,7 @@ def main():
 
 	tstdKI = computeKIMatrix(tstdN, tstdD)
 	tmeanKI = computeKIMatrix(tmeanN, tmeanD)
+	tKI = computeKIMatrix(tKIN, tKID)
 	writeMatrixToFile(tstdN, join(matrices_dir_name, "tstdN" + modifier + ".txt"))
 	writeMatrixToFile(tstdD, join(matrices_dir_name, "tstdD" + modifier + ".txt"))
 	writeMatrixToFile(tstdKI, join(matrices_dir_name, "tstdKI" + modifier + ".txt"))
@@ -308,5 +319,6 @@ def main():
 	writeMatrixToFile(tmeanD, join(matrices_dir_name, "tmeanD" + modifier + ".txt"))
 	writeMatrixToFile(tmeanKI, join(matrices_dir_name, "tmeanKI" + modifier + ".txt"))
 	writeMatrixToFile(tmeanV, join(matrices_dir_name, "tmeanV" + modifier + ".txt"))
+	writeMatrixToFile(tKI, join(matrices_dir_name, "tKI" + modifier + ".txt"))
 
 main()

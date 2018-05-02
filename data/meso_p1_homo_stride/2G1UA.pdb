@@ -1,0 +1,180 @@
+REM  -------------------- Secondary structure summary -------------------  ~~~~
+REM                                                                        ~~~~
+CHN  ../data/meso_p1_homo_pdb/2G1UA.pdb A                                  ~~~~
+REM                                                                        ~~~~
+REM                .         .         .         .         .               ~~~~
+SEQ  1    KQKSKYIVIFGCGRLGSLIANLASSSGHSVVVVDKNEYAFHRLNSEFSGF   50          ~~~~
+STR       TTTT EEEEE   HHHHHHHHHHHHH  EEEEEETTGGGGGG TTTT  E               ~~~~
+REM                                                                        ~~~~
+REM                .         .         .         .         .               ~~~~
+SEQ  51   TVVGDAAEFETLKECGMEKADMVFAFTNDDSTNFFISMNARYMFNVENVI  100          ~~~~
+STR       EEE TTTTHHHHHTTTGGGTTEEEE    HHHHHHHHHHHHHH  TTEEE               ~~~~
+REM                                                                        ~~~~
+REM                .         .         .                                   ~~~~
+SEQ  101  ARVYDPEKIKIFEENGIKTICPAVLMIEKVKEFIIGS               137          ~~~~
+STR       EE   GGGHHHHHH   EEE HHHHHHHHHHHHHH                              ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+REM                                                                        ~~~~
+LOC  AlphaHelix   ARG    17 A      SER     29 A                            ~~~~
+LOC  AlphaHelix   PHE    62 A      LYS     66 A                            ~~~~
+LOC  AlphaHelix   ASP    83 A      MET     96 A                            ~~~~
+LOC  AlphaHelix   ILE   112 A      GLU    117 A                            ~~~~
+LOC  AlphaHelix   PRO   125 A      ILE    138 A                            ~~~~
+LOC  310Helix     GLU    40 A      ARG     45 A                            ~~~~
+LOC  310Helix     MET    70 A      LYS     72 A                            ~~~~
+LOC  310Helix     PRO   109 A      LYS    111 A                            ~~~~
+LOC  Strand       TYR     9 A      PHE     13 A                            ~~~~
+LOC  Strand       SER    32 A      ASP     37 A                            ~~~~
+LOC  Strand       PHE    53 A      VAL     56 A                            ~~~~
+LOC  Strand       MET    75 A      ALA     78 A                            ~~~~
+LOC  Strand       ASN   101 A      ARG    105 A                            ~~~~
+LOC  Strand       LYS   121 A      ILE    123 A                            ~~~~
+LOC  TurnI        LYS     4 A      SER      7 A                            ~~~~
+LOC  TurnVIII     ASP    37 A      GLU     40 A                            ~~~~
+LOC  TurnI        ASN    47 A      PHE     50 A                            ~~~~
+LOC  TurnI        ASP    58 A      GLU     61 A                            ~~~~
+LOC  TurnI        LYS    66 A      GLY     69 A                            ~~~~
+LOC  TurnVIII     ALA    73 A      VAL     76 A                            ~~~~
+LOC  TurnVIII     VAL    99 A      VAL    102 A                            ~~~~
+REM                                                                        ~~~~
+REM  --------------- Detailed secondary structure assignment-------------  ~~~~
+REM                                                                        ~~~~
+REM  |---Residue---|    |--Structure--|   |-Phi-|   |-Psi-|  |-Area-|      ~~~~
+ASG  LYS A    4    1    T          Turn    360.00    360.00      89.6      ~~~~
+ASG  GLN A    5    2    T          Turn    -64.64    -23.57     204.0      ~~~~
+ASG  LYS A    6    3    T          Turn    -89.30      2.01     178.8      ~~~~
+ASG  SER A    7    4    T          Turn    -69.53    130.96      46.1      ~~~~
+ASG  LYS A    8    5    C          Coil   -112.56    160.53      88.4      ~~~~
+ASG  TYR A    9    6    E        Strand    -98.80    117.44      63.8      ~~~~
+ASG  ILE A   10    7    E        Strand   -124.06    126.87       6.0      ~~~~
+ASG  VAL A   11    8    E        Strand   -110.17    127.39       0.0      ~~~~
+ASG  ILE A   12    9    E        Strand   -117.90    122.56       0.0      ~~~~
+ASG  PHE A   13   10    E        Strand   -100.86    126.62       0.4      ~~~~
+ASG  GLY A   14   11    C          Coil     97.33    108.52       5.7      ~~~~
+ASG  CYS A   15   12    C          Coil   -105.36     49.42       0.0      ~~~~
+ASG  GLY A   16   13    C          Coil    -96.22   -152.59      27.4      ~~~~
+ASG  ARG A   17   14    H    AlphaHelix    -56.18    -50.04     191.3      ~~~~
+ASG  LEU A   18   15    H    AlphaHelix    -73.11    -52.12      39.3      ~~~~
+ASG  GLY A   19   16    H    AlphaHelix    -60.92    -40.57       0.5      ~~~~
+ASG  SER A   20   17    H    AlphaHelix    -65.81    -37.35      10.6      ~~~~
+ASG  LEU A   21   18    H    AlphaHelix    -61.23    -47.57     101.4      ~~~~
+ASG  ILE A   22   19    H    AlphaHelix    -67.28    -40.20      47.1      ~~~~
+ASG  ALA A   23   20    H    AlphaHelix    -59.58    -47.64       0.0      ~~~~
+ASG  ASN A   24   21    H    AlphaHelix    -62.28    -43.01      23.9      ~~~~
+ASG  LEU A   25   22    H    AlphaHelix    -69.43    -42.86      98.6      ~~~~
+ASG  ALA A   26   23    H    AlphaHelix    -58.10    -45.77       9.5      ~~~~
+ASG  SER A   27   24    H    AlphaHelix    -61.36    -43.26      14.5      ~~~~
+ASG  SER A   28   25    H    AlphaHelix    -72.94    -19.08      92.4      ~~~~
+ASG  SER A   29   26    H    AlphaHelix    -82.16     -1.59      81.6      ~~~~
+ASG  GLY A   30   27    C          Coil     92.57      9.30      46.6      ~~~~
+ASG  HIS A   31   28    C          Coil    -79.54    160.96      46.1      ~~~~
+ASG  SER A   32   29    E        Strand    -90.00    117.76      66.1      ~~~~
+ASG  VAL A   33   30    E        Strand   -119.67    126.43       1.1      ~~~~
+ASG  VAL A   34   31    E        Strand   -110.15    128.00      13.0      ~~~~
+ASG  VAL A   35   32    E        Strand   -119.45    133.53       0.0      ~~~~
+ASG  VAL A   36   33    E        Strand   -119.67    131.75       1.4      ~~~~
+ASG  ASP A   37   34    E        Strand   -149.10    148.05      26.6      ~~~~
+ASG  LYS A   38   35    T          Turn    -73.36    -22.95     157.9      ~~~~
+ASG  ASN A   39   36    T          Turn   -109.79    107.94      75.7      ~~~~
+ASG  GLU A   40   37    G      310Helix    -56.64    -29.63     107.2      ~~~~
+ASG  TYR A   41   38    G      310Helix    -65.54    -23.02     150.1      ~~~~
+ASG  ALA A   42   39    G      310Helix    -58.11    -31.27      11.9      ~~~~
+ASG  PHE A   43   40    G      310Helix    -65.63    -11.72      28.9      ~~~~
+ASG  HIS A   44   41    G      310Helix    -66.27    -14.31     158.6      ~~~~
+ASG  ARG A   45   42    G      310Helix    -73.44    -13.79     132.1      ~~~~
+ASG  LEU A   46   43    C          Coil    -77.60    139.19      24.6      ~~~~
+ASG  ASN A   47   44    T          Turn    -83.53    173.23      77.6      ~~~~
+ASG  SER A   48   45    T          Turn    -60.75    -27.65     128.0      ~~~~
+ASG  GLU A   49   46    T          Turn    -83.16    -11.63      99.6      ~~~~
+ASG  PHE A   50   47    T          Turn    -57.23    124.04      34.8      ~~~~
+ASG  SER A   51   48    C          Coil   -114.26    134.42      89.2      ~~~~
+ASG  GLY A   52   49    C          Coil    144.30   -179.38      31.7      ~~~~
+ASG  PHE A   53   50    E        Strand   -120.38    148.10     155.1      ~~~~
+ASG  THR A   54   51    E        Strand   -111.56    149.11      72.6      ~~~~
+ASG  VAL A   55   52    E        Strand   -133.67    122.96      24.0      ~~~~
+ASG  VAL A   56   53    E        Strand    -91.37    123.17      78.1      ~~~~
+ASG  GLY A   57   54    C          Coil    176.61    162.64      15.2      ~~~~
+ASG  ASP A   58   55    T          Turn    -85.05    113.95      64.3      ~~~~
+ASG  ALA A   59   56    T          Turn    -73.09     -6.05       8.5      ~~~~
+ASG  ALA A   60   57    T          Turn    -81.83      0.76      45.0      ~~~~
+ASG  GLU A   61   58    T          Turn   -105.57    130.24     108.3      ~~~~
+ASG  PHE A   62   59    H    AlphaHelix    -58.56    -38.93      65.9      ~~~~
+ASG  GLU A   63   60    H    AlphaHelix    -57.00    -33.13     124.1      ~~~~
+ASG  THR A   64   61    H    AlphaHelix    -66.26    -43.76       7.6      ~~~~
+ASG  LEU A   65   62    H    AlphaHelix    -59.58    -33.02       0.0      ~~~~
+ASG  LYS A   66   63    H    AlphaHelix    -69.33    -21.94      71.8      ~~~~
+ASG  GLU A   67   64    T          Turn    -86.63      4.16     124.4      ~~~~
+ASG  CYS A   68   65    T          Turn   -103.72     -8.10       3.6      ~~~~
+ASG  GLY A   69   66    T          Turn     64.58     39.27      14.2      ~~~~
+ASG  MET A   70   67    G      310Helix    -65.49    -23.78       0.2      ~~~~
+ASG  GLU A   71   68    G      310Helix    -68.37    -14.62     102.3      ~~~~
+ASG  LYS A   72   69    G      310Helix    -90.27     -7.40     125.3      ~~~~
+ASG  ALA A   73   70    T          Turn    -73.93    140.15      12.0      ~~~~
+ASG  ASP A   74   71    T          Turn    -81.38    -30.76      76.4      ~~~~
+ASG  MET A   75   72    E        Strand   -151.46    144.94      39.5      ~~~~
+ASG  VAL A   76   73    E        Strand   -126.94    132.23       0.5      ~~~~
+ASG  PHE A   77   74    E        Strand   -113.78    118.26      22.8      ~~~~
+ASG  ALA A   78   75    E        Strand   -100.49     88.88       0.0      ~~~~
+ASG  PHE A   79   76    C          Coil   -118.99     34.30       4.4      ~~~~
+ASG  THR A   80   77    C          Coil    -75.38    173.56      23.2      ~~~~
+ASG  ASN A   81   78    C          Coil    -92.06     18.79     119.4      ~~~~
+ASG  ASP A   82   79    C          Coil   -128.90    118.21      71.2      ~~~~
+ASG  ASP A   83   80    H    AlphaHelix    -61.70    -40.97      13.0      ~~~~
+ASG  SER A   84   81    H    AlphaHelix    -63.01    -42.83      80.8      ~~~~
+ASG  THR A   85   82    H    AlphaHelix    -61.92    -45.43      27.1      ~~~~
+ASG  ASN A   86   83    H    AlphaHelix    -62.76    -34.52       0.0      ~~~~
+ASG  PHE A   87   84    H    AlphaHelix    -64.07    -46.64      57.9      ~~~~
+ASG  PHE A   88   85    H    AlphaHelix    -56.49    -51.85      68.5      ~~~~
+ASG  ILE A   89   86    H    AlphaHelix    -57.02    -48.39       0.0      ~~~~
+ASG  SER A   90   87    H    AlphaHelix    -70.36    -40.75       0.0      ~~~~
+ASG  MET A   91   88    H    AlphaHelix    -63.60    -45.04      48.1      ~~~~
+ASG  ASN A   92   89    H    AlphaHelix    -59.95    -44.16      26.7      ~~~~
+ASG  ALA A   93   90    H    AlphaHelix    -56.79    -49.64       0.0      ~~~~
+ASG  ARG A   94   91    H    AlphaHelix    -61.57    -49.86      70.8      ~~~~
+ASG  TYR A   95   92    H    AlphaHelix   -106.06    -34.78     117.6      ~~~~
+ASG  MET A   96   93    H    AlphaHelix    -79.62    -46.89     112.5      ~~~~
+ASG  PHE A   97   94    C          Coil   -101.27     -1.86      21.7      ~~~~
+ASG  ASN A   98   95    C          Coil     61.29     40.43     130.2      ~~~~
+ASG  VAL A   99   96    T          Turn    -86.97    123.61       4.5      ~~~~
+ASG  GLU A  100   97    T          Turn    -71.11    -45.01      74.8      ~~~~
+ASG  ASN A  101   98    E        Strand   -101.42    104.46      48.5      ~~~~
+ASG  VAL A  102   99    E        Strand   -130.54    125.94       0.0      ~~~~
+ASG  ILE A  103  100    E        Strand   -123.38    128.82      30.1      ~~~~
+ASG  ALA A  104  101    E        Strand   -124.79    142.37       0.0      ~~~~
+ASG  ARG A  105  102    E        Strand    -80.38    134.94      33.9      ~~~~
+ASG  VAL A  106  103    C          Coil   -133.57    112.89       0.0      ~~~~
+ASG  TYR A  107  104    C          Coil    -76.41    -41.94      84.8      ~~~~
+ASG  ASP A  108  105    C          Coil    -86.60    113.07      55.3      ~~~~
+ASG  PRO A  109  106    G      310Helix    -56.25    -27.36      65.4      ~~~~
+ASG  GLU A  110  107    G      310Helix    -70.71    -15.84     174.9      ~~~~
+ASG  LYS A  111  108    G      310Helix    -89.92     -8.99      82.7      ~~~~
+ASG  ILE A  112  109    H    AlphaHelix    -58.76    -44.17      24.3      ~~~~
+ASG  LYS A  113  110    H    AlphaHelix    -55.03    -45.12     117.4      ~~~~
+ASG  ILE A  114  111    H    AlphaHelix    -67.95    -33.47      74.0      ~~~~
+ASG  PHE A  115  112    H    AlphaHelix    -66.58    -50.61       3.0      ~~~~
+ASG  GLU A  116  113    H    AlphaHelix    -66.13    -31.57     109.1      ~~~~
+ASG  GLU A  117  114    H    AlphaHelix    -68.38    -17.81     126.9      ~~~~
+ASG  ASN A  118  115    C          Coil   -103.31     15.20      30.1      ~~~~
+ASG  GLY A  119  116    C          Coil     74.97     19.48      28.7      ~~~~
+ASG  ILE A  120  117    C          Coil    -99.59    125.26       2.2      ~~~~
+ASG  LYS A  121  118    E        Strand    -75.21    145.75     120.3      ~~~~
+ASG  THR A  122  119    E        Strand   -121.87    144.51      31.6      ~~~~
+ASG  ILE A  123  120    E        Strand   -120.41    110.36      57.9      ~~~~
+ASG  CYS A  124  121    C          Coil   -114.45    107.72       6.5      ~~~~
+ASG  PRO A  125  122    H    AlphaHelix    -50.44    -46.02      51.1      ~~~~
+ASG  ALA A  126  123    H    AlphaHelix    -60.48    -44.38      48.8      ~~~~
+ASG  VAL A  127  124    H    AlphaHelix    -65.26    -42.92      46.9      ~~~~
+ASG  LEU A  128  125    H    AlphaHelix    -61.47    -41.76      93.1      ~~~~
+ASG  MET A  129  126    H    AlphaHelix    -66.67    -46.31     132.9      ~~~~
+ASG  ILE A  130  127    H    AlphaHelix    -62.17    -42.50     104.8      ~~~~
+ASG  GLU A  131  128    H    AlphaHelix    -60.09    -41.69     108.1      ~~~~
+ASG  LYS A  132  129    H    AlphaHelix    -67.36    -44.37     102.8      ~~~~
+ASG  VAL A  133  130    H    AlphaHelix    -57.14    -46.67      83.6      ~~~~
+ASG  LYS A  134  131    H    AlphaHelix    -58.39    -43.02      97.2      ~~~~
+ASG  GLU A  135  132    H    AlphaHelix    -58.42    -37.85      99.1      ~~~~
+ASG  PHE A  136  133    H    AlphaHelix    -73.77    -15.44     154.3      ~~~~
+ASG  ILE A  137  134    H    AlphaHelix   -102.54    -53.63     129.5      ~~~~
+ASG  ILE A  138  135    H    AlphaHelix    -99.53     -7.41     132.2      ~~~~
+ASG  GLY A  139  136    C          Coil     92.99    171.26      43.2      ~~~~
+ASG  SER A  140  137    C          Coil    360.00    360.00      78.3      ~~~~

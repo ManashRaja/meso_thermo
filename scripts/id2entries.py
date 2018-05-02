@@ -34,9 +34,25 @@ def main():
 
 	entry_dict = stringLinesToDict(entry_file.readlines())
 
+	features = ["ARO","POS","NEG","POL","HYD"]
+	list_ss = ["H", "S", "L"]
+	list_sa = ["B", "I", "E"]
+	list_aa = ["ALA", "CYS", "ASP", "GLU", "PHE", "GLY", 
+		   "HIS", "ILE", "LYS", "LEU", "MET", "ASN", 
+		   "PRO", "GLN", "ARG", "SER", "THR", "VAL", "TRP", "TYR"]
+
+	num_mat = {}
+	counter = 0
+	for aa in list_aa:
+		for f in features:
+			for ss in list_ss:
+				for sa in list_sa:
+					num_mat[counter] = aa + " " + f + " " + ss + " " + sa
+					counter = counter + 1
+
 	for i in id_file:
 		print entry_dict[int(i)]
-		out_file.write(str(entry_dict[int(i)]) + "\n")
+		out_file.write(str(entry_dict[int(i)]) + "," + num_mat[int(i)] + "\n")
 	out_file.close()
 	entry_file.close()
 main()

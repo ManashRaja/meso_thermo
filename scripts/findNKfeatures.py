@@ -1,4 +1,4 @@
-#python ../../scripts/findNKfeatures.py tstdKI_z_thermo_homo.txt tmeanV_z_thermo_homo.txt tmeanKI_z_thermo_homo.txt tstdKI_z_meso_homo.txt tmeanV_z_meso_homo.txt tmeanKI_z_meso_homo.txt 90 z_NKfeatures_homo.txt z_NKfeatures_homo_id.txt
+#python ../../scripts/findNKfeatures.py tstdKI_z_thermo_homo.txt tmeanV_z_thermo_homo.txt tKI_z_thermo_homo.txt tstdKI_z_meso_homo.txt tmeanV_z_meso_homo.txt tKI_z_meso_homo.txt 900 z_NKfeatures_homo.txt z_NKfeatures_homo_id.txt
 import sys
 from os import listdir
 from os.path import isfile, join
@@ -62,6 +62,7 @@ def main():
 	thermo_v_ki = stringLinesToDict(thermo_v_file.readlines())
 	thermoKI = stringLinesToDict(thermoKI_file.readlines())
 
+	'''
 	sorted_meso_std_ki = sorted(meso_std_ki.iteritems(), key=lambda (k,v): (v,k))
 	sorted_thermo_std_ki = sorted(thermo_std_ki.iteritems(), key=lambda (k,v): (v,k))
 
@@ -76,6 +77,21 @@ def main():
 			out_id_file.write(str(i)+"\n")
 
 	print "K = ", len(k_ids)
+	'''
+
+	for key in thermo_std_ki:
+		thermo_valid = 0
+		meso_valid = 0
+		if(thermo_v_ki[key] > v_thres and thermo_std_ki[key] > 0):
+			thermo_valid = 1
+		if(meso_v_ki[key] > v_thres and meso_std_ki[key] > 0):
+			meso_valid = 1
+		print key, thermo_std_ki[key], thermo_valid, thermoKI[key], meso_std_ki[key], meso_valid, mesoKI[key]
+		out_text = str(key) + "," + str(thermo_std_ki[key]) + "," + str(thermo_valid) + "," + str(thermoKI[key]) + "," + str(meso_std_ki[key]) + "," + str(meso_valid) + "," + str(mesoKI[key]) + "\n";
+		out_file.write(out_text)
+		out_id_file.write(str(key)+"\n")
+
+
 	out_file.close()
 	out_id_file.close()
 	thermo_file.close()
